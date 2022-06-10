@@ -50,6 +50,25 @@ def bfs(head: Node):
             q.append(item.right)
         print(item.value)
 
+        
+def kth_smallest(head: Node, k: int) -> int:
+    """Find kth smallest node in a binary tree
+    """
+    items = []
+    node = head
+    stack = [node]
+    
+    while node or stack:
+        while node: 
+            stack.append(node.left)
+            node = node.left
+        
+        node = stack.pop()
+        if node:
+            items.append(node.value)
+            node = node.right
+        
+    return items
 
 print("DFS:")
 dfs(n3)
