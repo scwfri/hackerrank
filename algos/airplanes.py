@@ -10,6 +10,7 @@ arr sorted by time
 dep arr is sorted by corresponding arr array (plane 'i' arrives at arr[i] and departs at dep[i]
 """
 
+
 def test(arr, dep):
     arr = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in arr]
     dep = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in dep]
@@ -34,7 +35,6 @@ def test(arr, dep):
 
 
 def mine(arr, dep):
-
     arr = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in arr]
     dep = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in dep]
 
@@ -58,5 +58,5 @@ def mine(arr, dep):
 if __name__ == "__main__":
     arr = ["9:30", "10:45", "11:00", "11:15", "16:30"]
     dep = ["11:45", "12:00", "12:30", "11:30", "16:45"]
-    test(run(arr, dep))
-    mine(run2(arr, dep))
+    print(test(arr, dep))
+    print(mine(arr, dep))
