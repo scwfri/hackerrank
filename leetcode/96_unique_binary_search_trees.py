@@ -8,6 +8,6 @@ def numTrees(n: int) -> int:
     return res
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     assert numTrees(3) == 5
     assert numTrees(1) == 1

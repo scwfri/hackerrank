@@ -18,5 +18,5 @@ def run(bar: list[int], day: int, month: int) -> int:
     return count
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     exit(print(run([2, 2, 1, 3, 2], 4, 2)))

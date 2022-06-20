@@ -56,7 +56,7 @@ def window_max_optimized(nums: list[int], k: int) -> list[int]:
     sliding_max = []
     left = 1
     right = k + 1
-    print(f"append {max(nums[0:k])}")
+    print(f'append {max(nums[0:k])}')
     sliding_max.append(max(nums[0:k]))
     while right <= len(nums):
         compare_max = sliding_max[-1]
@@ -76,7 +76,7 @@ def window_max_optimized(nums: list[int], k: int) -> list[int]:
     return sliding_max
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     window_max_optimized([1, 3, -1, -3, 5, 3, 6, 7], 3)
     window_max_optimized([1], 1)
     window_max_optimized([1, -1], 1)

@@ -11,7 +11,7 @@ def grid_challenge(grid: list[str]) -> str:
             else:
                 prev_char = row[idx]
 
-    return "YES"
+    return 'YES'
 
 
 def test_grid_challenge():

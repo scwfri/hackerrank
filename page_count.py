@@ -15,7 +15,7 @@ def count_turns(book: List[int], target_page: int):
         except StopIteration:
             pages = (page, 0)
 
-        print(f"{pages=}")
+        print(f'{pages=}')
         if target_page in pages:
             return page_turns
         else:

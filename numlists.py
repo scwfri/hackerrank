@@ -19,5 +19,5 @@ def run(a: list, b: list, x: int) -> bool:
     return True
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     print(run([1, 2, 2, 1], [3, 3, 3, 4], 5))

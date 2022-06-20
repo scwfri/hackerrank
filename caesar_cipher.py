@@ -9,7 +9,7 @@ def caesar_cipher(cipher: str, rotation: int) -> str:
     rotated = collections.deque(string.ascii_lowercase)
     rotated.rotate(-rotation)
 
-    encrypted = ""
+    encrypted = ''
     for c in cipher:
         if c.lower() not in alphabet:
             encrypted += c
@@ -22,10 +22,10 @@ def caesar_cipher(cipher: str, rotation: int) -> str:
 
 
 def run():
-    plain_text = "middle-Outz"
-    print(f"{plain_text=}")
-    print(f"{caesar_cipher(plain_text, 2)=}")
+    plain_text = 'middle-Outz'
+    print(f'{plain_text=}')
+    print(f'{caesar_cipher(plain_text, 2)=}')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     raise SystemExit(run())

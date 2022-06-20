@@ -45,7 +45,7 @@ def search_range(nums: list[int], target: int) -> list[int]:
     idx = -1
     while low <= high:
         mid = (low + high) // 2
-        print(f"{mid=}, {low=}, {high=}")
+        print(f'{mid=}, {low=}, {high=}')
         if mid >= nums_len:
             break
         if nums[mid] == target:
@@ -67,7 +67,7 @@ def search_range(nums: list[int], target: int) -> list[int]:
         res[1] = upper_idx
         upper_idx += 1
 
-    print(f"input: {nums=}, {target=}")
+    print(f'input: {nums=}, {target=}')
     print(res)
     return res
 

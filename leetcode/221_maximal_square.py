@@ -7,7 +7,7 @@ def maximal_square(matrix: list[list[str]]) -> int:
     n = len(matrix[0])
     while i < m:
         while j < n:
-            if matrix[i][j] != "0":
+            if matrix[i][j] != '0':
                 if i == 0 or j == 0:
                     matrix[i][j] = int(matrix[i][j])
                 else:
@@ -30,6 +30,6 @@ def maximal_square(matrix: list[list[str]]) -> int:
 
 
 def test_maximal_square():
-    assert maximal_square([["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]]) == 4
-    assert maximal_square([["0", "1"], ["1", "0"]]) == 1
-    assert maximal_square([["1", "1"], ["1", "1"]]) == 4
+    assert maximal_square([['1', '0', '1', '0', '0'], ['1', '0', '1', '1', '1'], ['1', '1', '1', '1', '1'], ['1', '0', '0', '1', '0']]) == 4
+    assert maximal_square([['0', '1'], ['1', '0']]) == 1
+    assert maximal_square([['1', '1'], ['1', '1']]) == 4

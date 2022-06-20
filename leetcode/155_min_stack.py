@@ -84,7 +84,7 @@ class MinStack2:
         return min(self.stack)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     minStack = MinStack()
     minStack.push(-2)
     minStack.push(0)

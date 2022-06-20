@@ -21,6 +21,6 @@ def max_profit(prices: list[int]) -> int:
     return(max_profit)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     max_profit([7, 1, 5, 3, 6, 4])
     max_profit2([7, 1, 5, 3, 6, 4])

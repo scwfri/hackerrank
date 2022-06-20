@@ -12,8 +12,8 @@ dep arr is sorted by corresponding arr array (plane 'i' arrives at arr[i] and de
 
 
 def test(arr, dep):
-    arr = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in arr]
-    dep = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in dep]
+    arr = [int(t.split(':')[0]) * 60 + int(t.split(':')[1]) for t in arr]
+    dep = [int(t.split(':')[0]) * 60 + int(t.split(':')[1]) for t in dep]
     dep = sorted(dep)
     current_planes = 0
     current_departure_position = 0
@@ -35,8 +35,8 @@ def test(arr, dep):
 
 
 def mine(arr, dep):
-    arr = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in arr]
-    dep = [int(t.split(":")[0]) * 60 + int(t.split(":")[1]) for t in dep]
+    arr = [int(t.split(':')[0]) * 60 + int(t.split(':')[1]) for t in arr]
+    dep = [int(t.split(':')[0]) * 60 + int(t.split(':')[1]) for t in dep]
 
     gates_occupied = []
     max_size = 0
@@ -55,8 +55,8 @@ def mine(arr, dep):
     return max_size
 
 
-if __name__ == "__main__":
-    arr = ["9:30", "10:45", "11:00", "11:15", "16:30"]
-    dep = ["11:45", "12:00", "12:30", "11:30", "16:45"]
+if __name__ == '__main__':
+    arr = ['9:30', '10:45', '11:00', '11:15', '16:30']
+    dep = ['11:45', '12:00', '12:30', '11:30', '16:45']
     print(test(arr, dep))
     print(mine(arr, dep))

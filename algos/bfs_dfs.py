@@ -70,7 +70,7 @@ def kth_smallest(head: Node, k: int) -> int:
         
     return items
 
-print("DFS:")
+print('DFS:')
 dfs(n3)
-print("BFS:")
+print('BFS:')
 bfs(n3)
