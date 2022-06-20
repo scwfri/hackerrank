@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-def run(grid: list[str]) -> str:
+def grid_challenge(grid: list[str]) -> str:
     sorted_grid = [sorted(list(row)) for row in grid]
 
     for idx in range(len(sorted_grid[0])):
@@ -14,7 +14,7 @@ def run(grid: list[str]) -> str:
     return "YES"
 
 
-if __name__ == '__main__':
-    assert run(['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']) == 'YES'
-    assert run(['zxy', 'abc']) == 'NO'
-    assert run(['zja', 'akz']) == 'YES'
+def test_grid_challenge():
+    assert grid_challenge(['ebacd', 'fghij', 'olmkn', 'trpqs', 'xywuv']) == 'YES'
+    assert grid_challenge(['zxy', 'abc']) == 'NO'
+    assert grid_challenge(['zja', 'akz']) == 'YES'

@@ -51,6 +51,6 @@ def two_sum(nums: list[int], target: int) -> list[int]:
         j = i + 1
 
 
-if __name__ == "__main__":
+def test_two_sum():
     assert two_sum([2, 7, 11, 15], 9) in ([0, 1], [1, 0])
     assert two_sum([0, 4, 3, 0], 0) in ([0, 3], [3, 0])
